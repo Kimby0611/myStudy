@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery PlugIn</title>
+    <link rel="stylesheet" href="./css/jqPlugIn.css" />
+    <link
+      rel="stylesheet"
+      href="../jquery-ui-1.14.1.custom/jquery-ui.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../jquery-ui-1.14.1.custom/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/faq.css">
+    <script src="../jquery.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="column">
+        <h3>드래그</h3>
+        <div class="layer" id="layer">
+          <div class="layer_popup">
+            <img src="./images/window_object_1.jpg" width="100" height="100" />
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <h3>datepicker</h3>
+        <div>
+          <p>
+            <label for="startDate">날짜 선택</label>
+            <input type="text" name="startDate" id="startDate" readonly />
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <h3>swiper js</h3>
+        <div id="gallery_wrap" class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/pic_1.jpg" /></div>
+            <div class="swiper-slide"><img src="./images/pic_2.jpg" /></div>
+            <div class="swiper-slide"><img src="./images/pic_3.jpg" /></div>
+            <div class="swiper-slide"><img src="./images/pic_4.jpg" /></div>
+            <div class="swiper-slide"><img src="./images/pic_5.jpg" /></div>
+            <div class="swiper-slide"><img src="./images/pic_6.jpg" /></div>
+            <div class="swiper-slide"><img src="./images/pic_7.jpg" /></div>
+            <div class="swiper-slide"><img src="./images/pic_8.jpg" /></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+      <div class="column">
+        <h3>10분 동안 이 창 열지 않기</h3>
+        <div id="notice_wrap">
+          <h4 class="poptitle">팝업창</h4>
+          <img src="./images/window_object_1.jpg" />
+          <p class="closeWrap">
+            <input type="checkbox" name="expiresChk" id="expiresChk" />
+            <label for="expiresChk">10분 동안 이 창 열지 않기</label>
+            <button class="closeBtn">닫기</button>
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <h3>플러그인 제작</h3>
+        <div>
+          <p><button class="btn1">버튼 1</button></p>
+          <p><button class="btn2">버튼 2</button></p>
+          <p><button class="btn3">버튼 3</button></p>
+          <p id="plugpa"></p>
+        </div>
+      </div>
+    </div>
+    <div class="wrap secline">
+      <div class="column_Q">
+        <h3>자주 묻는 질문</h3>
+        <div>
+          <h4>질문 제목</h4>
+          <div class="faq">
+            <ul>
+              <li>
+                <p><button>Q1.자주 묻는 질문 내용?</button></p>
+                <div>
+                  <div class="cont">답변 내용1</div>
+                </div>
+              </li>
+              <li>
+                <p><button>Q2.자주 묻는 질문 내용?</button></p>
+                <div>
+                  <div class="cont">답변 내용2</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <h4>질문 제목2</h4>
+          <div class="faq">
+            <ul>
+              <li>
+                <p><button>Q1.자주 묻는 질문 내용?</button></p>
+                <div>
+                  <div class="cont">답변 내용1</div>
+                </div>
+              </li>
+              <li>
+                <p><button>Q2.자주 묻는 질문 내용?</button></p>
+                <div>
+                  <div class="cont">답변 내용2</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../jquery-ui-1.14.1.custom/swiper-bundle.min.js"></script>
+    <script src="../jquery-ui-1.14.1.custom/jquery.cookie.min.js"></script>
+    <script src="./js/jqPlugIn.js"></script>
+    <script src="../jquery-ui-1.14.1.custom/jquery-ui.min.js"></script>
+  </body>
+</html>

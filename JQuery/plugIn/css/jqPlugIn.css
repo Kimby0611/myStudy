@@ -1,0 +1,76 @@
+.wrap {
+  display: flex;
+  width: 100%;
+}
+.secline {margin-top: 20px;}
+.column {
+  border: 1px solid black;
+  height: 300px;
+  width: 300px;
+  margin: 0 10px;
+}
+.column_Q {
+    margin-top: 20px;
+    border: 1px solid black;
+    height: 300px;
+    width: 622px;
+    margin: 0 10px;
+  }
+.column > div {
+  width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h3 {
+  margin: 0;
+  background-color: lightblue;
+  padding: 10px;
+}
+.layer {
+  position: relative;
+  width: 100%;
+  height: 255px;
+}
+.layer_popup {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  cursor: move;
+}
+#startDate {
+  cursor: pointer;
+}
+#gallery_wrap {
+  display: flex;
+  flex: 1;
+  padding: 0;
+}
+.swiper-slide img {
+  width: 300px;
+  height: 255px;
+}
+#gallery_wrap .swiper-scrollbar-drag {
+  background: yellow;
+}
+input{vertical-align: middle;}
+#notice_wrap{
+    background-color: gray;
+    width: 400px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    box-shadow:0 0 8px #000;
+    text-align: center;
+    z-index: 1;
+}
+.closeWrap{
+    background-color: black;
+    color:#fff;
+    text-align: right;
+    padding:5px 10px;
+}
+.closeWrap button{
+    margin-left: 20px;
+    cursor:pointer;
+}
