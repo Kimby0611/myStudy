@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- <script>
+      window.onload = function () {
+        const app = Vue.createApp ({
+          data () {
+            return{count: 0};
+          },
+          methods: {
+            countUp: function () {
+              this.count ++;
+            }
+          }
+        });
+        app.mount('#app')
+      }
+    </script> -->
+  </head>
+  <body>
+    <h2>클릭하면 카운터가 올라갑니다.</h2>
+    <p>뷰 버전 (3.x)로 테스트</p>
+    <div id="app">
+      <p>{{count}}회</p>
+      <button v-on:click="countUp">count up</button>
+      <button v-on:click="countDown">count down</button>
+      <button v-on:click="reset">reset</button>
+    </div>
+    <!-- <div id="app2">
+      <p>{{count}}회</p>
+      <button v-on:click="countUp">카운</button>
+    </div> -->
+    <script>
+      const { createApp } = Vue;
+      //하나의 마운트
+      createApp({
+        data() {
+          return {
+            count: 0,
+          };
+        },
+        methods: {
+          countUp() {
+            this.count++;
+          },
+          countDown () {
+            this.count --;
+          },
+          reset () {
+            this.count = 0;
+          }
+        }
+      }).mount("#app")
+      //mount("id")id 부분의 태그를 실행시키기 위해 사용
+    </script>
+    <!-- <script>
+      //mount 두개 사용
+      const appConfig = {
+        data () {
+          return {
+            count: 0
+          }
+        },
+        methods: {
+          countUp () {
+            this.count ++;
+          }
+        }
+      };
+      createApp(appConfig).mount("#app");
+      createApp(appConfig).mount("#app2");
+    </script> -->
+  </body>
+</html>
