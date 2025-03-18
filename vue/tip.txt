@@ -1,0 +1,23 @@
+vue router추가
+>>vue add router
+
+
+vue 자동실행
+>>>package.json의 scripts
+"scripts" : {
+	"serve" : "vue-cli-service serve --open"
+	}
+	
+vue page 제작
+1. index.html 확인 >> id 확인(프로젝트의 진입점 확인)
+2. main.js >> index.html의 id와 main.js의 mount된 id와 같은지 확인
+3. component >> component 폴더에 vue 파일 추가 (name 정의시 두단어 이상 ex) HomePage)
+				파일명은 PascalCase(첫 글자 대문자, 공백이나 구분기호x)로 작성
+4. router>index.js >> component를 import하고 {path='/', component: component} 로 정의
+
+
+키보드 사용 가능 코드
+>> <input @keyup.enter = "submit">
+@keyup event
+.enter .tab .delete .ecs .space .up .down .left .right
+alt, control, shift 와 같은 특수키 처리 >> <input @keyup.alt.enter = "clear">
